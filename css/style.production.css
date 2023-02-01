@@ -1,0 +1,261 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Web Colors
+
+Background Color - Beige - #F8EDE3
+Font - Black - #000
+
+Link Active - Light Brown - #9E7676 -> #976b6b is better contrast
+Link Visited - Medium Brown - #815B5B
+Link/Link Hover/Focus - Dark Brown - #594545
+
+Button - Light Brown - #9E7676 -> #976b6b is better contrast
+Button Color - #fff
+
+*/
+
+:root {
+	
+	/*repeat values*/
+}
+
+/* Main Body */
+body {
+	background-color: #F8EDE3;
+	font-family: Source Sans Pro, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.15;
+}
+
+/* Box-Sizing */
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/* Headings */
+h1 {
+	font-size: 30px;
+	font-weight: 400;
+}
+h2 {
+	font-size: 24px;
+	font-weight: 400;
+}
+h3 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+/* Links */
+a {
+	color: #594545;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+a:focus {
+	text-decoration: none;
+	opacity: 0.7;
+}
+a:visited {
+	color: #815B5B;
+}
+a:active {
+	color: #9E7676;
+}
+
+/* Buttons */
+button {
+	/* overwrites browser default */
+	border: none;
+	display: inline-block;
+	/* takes font from outer container */
+	font-family: inherit;
+	/* styling */
+	background-color: #976b6b;
+	color: #fff;
+	padding: 10px;
+	border-radius: 3px;
+	/* width of border, type, color */
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+	-webkit-transition: 0.2s opacity;
+	-o-transition: 0.2s opacity;
+	transition: 0.2s opacity;
+}
+.button {
+	/* overwrites browser default */
+	border: none;
+	display: inline-block;
+	/* takes font from outer container */
+	font-family: inherit;
+	/* styling */
+	background-color: #976b6b;
+	color: #fff;
+	padding: 10px;
+	border-radius: 3px;
+	/* width of border, type, color */
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+	-webkit-transition: 0.2s opacity;
+	-o-transition: 0.2s opacity;
+	transition: 0.2s opacity;
+}
+button:hover, button:focus, .button:hover, .button:focus {
+	cursor: pointer;
+	opacity: 0.83;
+}
+.button:visited {
+	color: #fff;
+}
+
+/* Header - Logo & Navigation */
+.page-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	padding: 20px;
+}
+.page-header__item {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 200px;
+	        flex: 0 1 200px;
+}
+.page-header__item:last-child {
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	text-align: right;
+}
+.navigation-list {
+	list-style-type: none;
+}
+.navigation-list li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+/* Profile Body */
+.profile {
+	max-width: 700px;
+	margin: 0 auto;
+}
+.profile__picture {
+	float: left;
+	width: 250px;
+	height: 285px;
+	margin-right: 40px;
+	border-radius: 50%;
+}
+
+/* Footer */
+.page-footer {
+	clear: both;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: center;
+}
+.media-links__items {
+	width: 30px;
+	height: 30px;
+}
+
+/* Work HTML Main Content Grid */
+.project-list {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+.project-list__item {
+	background-color: lightgrey;
+}
+
+
+/* media queries */
+@media all and (max-width: 500px) {
+	.project-list {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+	.project-list {
+		-ms-grid-columns: 1fr 20px 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media all and (max-width: 750px) {
+	.project-list {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	.project-list:last-child {
+		grid-gap: 10px;
+	}
+	h2 {
+		font-size: 23px;
+	}
+}
+
+/* SVG Photo */
+.atx-skyline__svg {
+	width: 300px;
+	height: auto;
+}
+@-webkit-keyframes color-change {
+	from {
+		fill: #B5C3C3;
+	}
+	to {
+		fill: #658280;
+	}
+}
+@keyframes color-change {
+	from {
+		fill: #B5C3C3;
+	}
+	to {
+		fill: #658280;
+	}
+}
+.tallest-building, .slant-building, .back-left__building, .skinny-building {
+	-webkit-animation: 7s color-change infinite alternate linear;
+	        animation: 7s color-change infinite alternate linear;
+}
+@-webkit-keyframes color-change2 {
+	from {
+		fill: #658280;
+	}
+	to {
+		fill: #B5C3C3;
+	}
+}
+@keyframes color-change2 {
+	from {
+		fill: #658280;
+	}
+	to {
+		fill: #B5C3C3;
+	}
+}
+.front-dark__buildings {
+	-webkit-animation: 8s color-change2 infinite alternate linear;
+	        animation: 8s color-change2 infinite alternate linear;
+}
