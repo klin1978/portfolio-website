@@ -175,31 +175,5 @@ button:hover, button:focus, .button:hover, .button:focus {
 	}
 }
 
-/* SVG Photo */
-.atx-skyline__svg {
-	width: 300px;
-	height: auto;
-}
-@keyframes color-change {
-	from {
-		fill: #B5C3C3;
-	}
-	to {
-		fill: #658280;
-	}
-}
-.tallest-building, .slant-building, .back-left__building, .skinny-building {
-	animation: 7s color-change infinite alternate linear;
-}
-@keyframes color-change2 {
-	from {
-		fill: #658280;
-	}
-	to {
-		fill: #B5C3C3;
-	}
-}
-.front-dark__buildings {
-	animation: 8s color-change2 infinite alternate linear;
-}
+
 
