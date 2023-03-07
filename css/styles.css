@@ -1,5 +1,4 @@
 /* Web Colors
-
 Background Color - Beige - #F8EDE3
 Font - Black - #000
 
@@ -9,7 +8,6 @@ Link/Link Hover/Focus - Dark Brown - #594545
 
 Button - Light Brown - #9E7676 -> #976b6b is better contrast
 Button Color - #fff
-
 */
 
 :root {
@@ -174,6 +172,5 @@ button:hover, button:focus, .button:hover, .button:focus {
 		font-size: 23px;
 	}
 }
-
 
 
